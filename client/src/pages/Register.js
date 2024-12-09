@@ -39,7 +39,7 @@ const Register = () => {
   };
 
   return (
-    <div className="text-bg-dark">
+    <div className="text-bg-dark" style={{ minHeight: '100vh' }}>
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <a href="/" className="navbar-brand">
