@@ -16,7 +16,7 @@ const SnuggleBoard = () => {
     };
 
     loadEntries();
-  }, []); // Empty dependency array means this runs only once after the component mounts
+  }, []); // Empty dependency array which means this runs only once after the component mounts
 
   // Handle filter changes
   const handleFilterChange = (e) => {
@@ -25,7 +25,7 @@ const SnuggleBoard = () => {
 
     setFilter(newFilter);
 
-    // Filter entries based on the new filter
+    // Filter entries based on the cats
     const filtered = entries.filter((entry) => {
       const matchesColor = newFilter.color
         ? entry.color === newFilter.color
